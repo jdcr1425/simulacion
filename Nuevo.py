@@ -27,6 +27,9 @@ sum2=0
 for x in range(0,len(sif)):
     sum+=sif[x]
     sum2+=di[x]
+    
+    
+Cn = aif[len(aif)-1] + di[len(di)-1] + sif[len(sif)-1] 
 
 average_delay=sum2/n
 
@@ -34,12 +37,18 @@ Average_interarrival_time=aif[len(aif)-1]/n
 average_Service_time=float(sum/n)
 arrival_rate=1/Average_interarrival_time
 W=average_delay+average_Service_time
-Cn=376
 
 I=(n/Cn)*W
 Q=(n/Cn)*average_delay
 X=(n/Cn)*average_Service_time
-print("Average_interarrival_time = ",Average_interarrival_time)
+
+
+
+print ("\ndi = " + str(di))
+print ("ci = " + str(ci))
+
+
+print("\nAverage_interarrival_time = ",Average_interarrival_time)
 print("Arrival rate = ",arrival_rate)
 print("Average service time = ",average_Service_time)
 print("Service rate = ",(1/average_Service_time))
@@ -47,10 +56,6 @@ print("Service rate = ",(1/average_Service_time))
 print("-----------------------------------------------")
 print("Average delay = ",average_delay)
 print("Average wait = ",W)
-print("I = ",I)
+print("I,  = ",I)
 print("Q = ",Q)
 print("X = ",X)
-
-
-print ("di = " + str(di))
-print ("ci = " + str(ci))
