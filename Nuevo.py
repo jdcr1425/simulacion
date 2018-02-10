@@ -22,6 +22,24 @@ while (i<n):
      i = i+1
 
 
+ganancias_viejo=49*n;
+
+for x in di:
+  if x>2:
+    ganancias_viejo-=5;
+sum=0
+
+for x in ci:
+  if x >12: 
+   sum = x-12
+   extras=sum*10
+   ganancias_viejo-=extras
+  
+    
+print ("Ganancia del dia ",ganancias_viejo)
+     
+     
+     
 sum = 0
 sum2=0
 for x in range(0,len(sif)):
